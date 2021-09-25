@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- form태그는 어딘가로 보낼때 사용 -->>
+<!--  method 안에는 get아니면 post만 들어갈 수 있음
+	기술면접에서 무조건 나옴
+	get과 post의 차이점은? 
+-->
+<form method="post" action="register">	<!--  post방식으로 ResisterServlet으로 데이터 값을 넘긴다. -->
+	<fieldset id="regbox">
+		<legend>회원가입</legend>
+		<label for="id">아이디</label>
+		<input type="text" name="id" value="호랑이"/><br/>	<!-- value값은 웹 창에 띄워줄 글씨 -->>
+		<input type="submit" value="가입">
+		<input type="reset" value="취소"/>
+	</fieldset>
+</form>
+</body>
+</html>
